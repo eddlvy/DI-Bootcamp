@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* MAIN SECTION */
+
+.main-section {
+  width: 100%;
+  height: 100vh;
+  /* padding: 1rem; */
+}
+
+/* MAIN CONTAINER */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+  /* padding: 6rem; */
+  width: 100%;
+  height: 100%;
+}
+
+/* LEFT CELL */
+
+.photo-info-box {
+  width: 100%;
+  height: 100%;
+  grid-column: 1;
+  grid-row: 1 / span 5;
+  display: flex;
+  flex-direction: column;
+  background-color: #e9ecef;
+  padding: 6rem 0 2rem 0;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+img {
+  display: block;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  opacity: 0.9;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.title-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -0.4px;
+  margin-bottom: 1rem;
+  border-bottom: 1px #777 solid;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+  padding-left: 0.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.contact-info {
+  padding: 2rem;
+  line-height: 2;
+  text-align: center;
+  border-bottom: 1px #777 solid;
+  margin-bottom: 2rem;
+}
+
+.text-contact {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.icon-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+}
+
+.icon {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* RIGTH CELLS GRID */
+
+.box {
+  padding: 4rem 2rem 1.6rem 1.6rem;
+  border-bottom: 1px #777 solid;
+  padding-right: 2rem;
+}
+
+.text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.education-box {
+  padding-top: 0;
+}
+
+.text-education {
+  padding-left: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.education-list {
+  padding-top: 0.4rem;
+  padding-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skills-box {
+  padding-top: 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  padding-top: 0.4rem;
+  padding-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.professional-experience-box {
+  padding-top: 0;
+  border: none;
+}
