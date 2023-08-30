@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>ExerciseXP Bootstrap</title>
+  </head>
+  <body>
+    <h1>Hello Bootstrap</h1>
+    <div class="container-fluid">
+      <div class="row" style="background-color: blue">
+        <div class="col-1" style="background-color: aqua">1</div>
+        <div class="col-1" style="background-color: aqua">2</div>
+        <div class="col-1" style="background-color: aqua">3</div>
+        <div class="col-1" style="background-color: aqua">4</div>
+        <div class="col-1" style="background-color: aqua">5</div>
+        <div class="col-1" style="background-color: aqua">6</div>
+        <div class="col-1" style="background-color: aqua">7</div>
+        <div class="col-1" style="background-color: aqua">8</div>
+        <div class="col-1" style="background-color: aqua">9</div>
+        <div class="col-1" style="background-color: aqua">10</div>
+        <div class="col-1" style="background-color: aqua">11</div>
+        <div class="col-1" style="background-color: aqua">12</div>
+      </div>
+    </div>
+    <div class="container-fluid" style="margin-top: 10px; text-align: center">
+      <div class="row" style="background-color: blue; border: 1px solid #111">
+        <div class="col-4" style="background-color: violet">1</div>
+        <div class="col-4" style="background-color: blue">2</div>
+        <div class="col-4" style="background-color: green">3</div>
+      </div>
+    </div>
+    <div class="container-fluid" style="margin-top: 10px; text-align: center">
+      <div class="row" style="background-color: blue; border: 1px solid #111">
+        <div class="col-5" style="background-color: violet">1</div>
+        <div class="col-6 offset-md-1" style="background-color: blue">2</div>
+      </div>
+      <div class="row" style="background-color: blue; border: 1px solid #111">
+        <div class="col-5" style="background-color: violet">1</div>
+        <div class="col-6 offset-md-1" style="background-color: blue">2</div>
+      </div>
+    </div>
+    <div
+      class="row"
+      style="background-color: blue; border: 1px solid #111; margin-top: 10px"
+    >
+      <div class="col-6" style="background-color: violet">1</div>
+      <div class="col-6" style="background-color: blue">2</div>
+    </div>
+    <div class="row" style="background-color: blue; border: 1px solid #111">
+      <div class="col-6" style="background-color: violet">1</div>
+      <div class="col-6" style="background-color: blue">2</div>
+    </div>
+    <div class="container-fluid" style="margin-top: 10px">
+      <div class="col-6" style="background-color: aquamarine">1</div>
+      <div class="col-6" style="background-color: blueviolet">2</div>
+    </div>
+    <div class="container-fluid" style="margin-top: 10px; text-align: center">
+      <div class="row" style="background-color: blue; border: 1px solid #111">
+        <div class="col-xs-4" style="background-color: aquamarine">1</div>
+        <div class="col-xs-4" style="background-color: green">2</div>
+        <div class="col-xs-4" style="background-color: red">3</div>
+      </div>
+    </div>
+    <div class="container-fluid" style="margin-top: 10px; text-align: center">
+      <div class="row" style="background-color: blue; border: 1px solid #111">
+        <div class="col-sm-4" style="background-color: aquamarine">1</div>
+        <div class="col-sm-4" style="background-color: green">2</div>
+        <div class="col-sm-4" style="background-color: red">3</div>
+      </div>
+    </div>
+    <div class="container-fluid" style="margin-top: 10px; text-align: center">
+      <div class="row" style="background-color: blue; border: 1px solid #111">
+        <div class="col-md-4" style="background-color: aquamarine">1</div>
+        <div class="col-md-4" style="background-color: green">2</div>
+        <div class="col-md-4" style="background-color: red">3</div>
+      </div>
+    </div>
+    <div class="container-fluid" style="margin-top: 10px; text-align: center">
+      <div class="row" style="background-color: blue; border: 1px solid #111">
+        <div class="col-lg-4" style="background-color: aquamarine">1</div>
+        <div class="col-lg-4" style="background-color: green">2</div>
+        <div class="col-lg-4" style="background-color: red">3</div>
+      </div>
+    </div>
+    <div id="liveAlertPlaceholder"></div>
+    <button type="button" class="btn btn-primary" id="liveAlertBtn">
+      Show live alert
+    </button>
+
+    <button type="button" style="margin: 30px" class="btn btn-info">
+      BUTTON
+    </button>
+    <form
+      style="
+        border: 1px solid #111;
+        margin-bottom: 30px;
+        padding: 30px;
+        text-align: justify;
+      "
+    >
+      <div class="mb-3">
+        <label
+          for="exampleInputEmail1"
+          class="form-control"
+          aria-describedby="nameH"
+          >Name</label
+        >
+        <input
+          type="text"
+          class="form-control-lg"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <label
+          for="exampleInputEmail1"
+          class="form-control"
+          aria-describedby="Surname"
+          >Surname</label
+        >
+        <input
+          type="text"
+          class="form-control-lg"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+        <input
+          type="text"
+          class="form-control-lg"
+          id="exampleInputEmail1"
+          aria-describedby="emailH"
+        />
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="dropdown">
+      <button
+        style="margin-bottom: 60px"
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu" style="margin-bottom: 60px">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+/* .navbar {
+  padding: 25px 35px !important;
+} */
+
+input {
+  background-color: #fff !important;
+  width: 30rem !important;
+}
+
+input::placeholder {
+  color: #111 !important;
+}
+
+.btn {
+  color: #fff !important;
+  background-color: #2f9e44 !important;
+  /* width: 100px !important; */
+}
+
+.btn-2 {
+  background-color: blue !important;
+}
+
+.display-6 {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.container-3 {
+  margin-top: 60px;
+}
