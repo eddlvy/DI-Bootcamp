@@ -1,0 +1,105 @@
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  position: relative;
+  padding: 6rem;
+  width: 130rem;
+  height: 100vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: ; */
+  justify-content: center;
+  align-items: center;
+  column-gap: 4rem;
+  row-gap: 4rem;
+}
+
+.box {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 12px;
+  transition: all 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  display: block;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+}
+
+.box1 {
+  background-color: #212529;
+}
+
+.box1:hover {
+  background-color: #868e96;
+}
+
+.box2 {
+  background-color: #c92a2a;
+}
+
+.box2:hover {
+  background-color: #5f3dc4;
+}
+
+.box3 {
+  background-color: #22b8cf;
+}
+
+.box3:hover {
+  transform: scale(0.7);
+}
+
+.box4 {
+  background-color: #ffd43b;
+}
+
+.box4:hover {
+  transform: rotate(-45deg);
+}
+
+.box5 {
+  background-color: #5f3dc4;
+}
+
+.box5:hover {
+  border-radius: 50%;
+}
+
+.box6 {
+  background-color: #d9480f;
+}
+
+.box6:hover {
+  box-shadow: 1rem 1rem 0 0 #212529;
+}
+
+.box7 {
+  background-color: #111;
+}
+
+.box7:hover {
+  box-shadow: inset 0 0 0 2rem #5f3dc4;
+}
+.box8 {
+  background-color: #c2255c;
+}
+
+.box8:hover {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
