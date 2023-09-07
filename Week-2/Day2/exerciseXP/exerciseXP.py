@@ -56,7 +56,7 @@ print(basket)
 
 # floats are decimal number, int are whole numbers
 # float() function
-# 3
+# 4.3
 
 increment = 1
 
@@ -118,7 +118,7 @@ else :
 user_pizza_input = ""
 user_pizza_with_toppings = []
 
-while user_pizza_input != "Quit" :
+while user_pizza_input != "quit" :
     user_pizza_input = input("Enter your Pizza Topings , and type quit to Exit\n")
     user_pizza_with_toppings.append(user_pizza_input)
     print("Topping Added to your pizza")

@@ -17,6 +17,7 @@ else:
 print(user_string[0])
 print(user_string[len(user_string)-1])
 
+
 # 3
 for i in user_string:
     print(i)

@@ -1,0 +1,16 @@
+
+1 i need to create a grid with 9 empty spaces, 3 columns and 3 rows , how?
+
+2 i need a function for each user input with the position of the input and the mark type of the input they want and to change user and mark from 1 to 2 to 1 again if input true go to next user
+
+3 i need a function to evaluate if the input is near a previous input , use if
+
+4 i need a function to evaluate how many spaces are full, use for , booleans and if , and to stop the game when all full and take the previous position function and evaluate the winner
+
+
+
+
+
+
+
+
