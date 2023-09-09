@@ -1,16 +1,16 @@
 
 
+
+
+
+
+# MATRIX 9x9
+
 board = [
   [" "," "," "],
   [" "," "," "],
   [" "," "," "]
 ]
-
-
-
-
-
-
 
 
 # BOARD FUNCTION
@@ -37,16 +37,14 @@ def print_board():
   print(f"       {board[2][0]}    |    {board[2][1]}   |    {board[2][2]}   ")
   print(" ******************************")
 
-# print_board()
-
-# number = 1
 
 
 
-# PLAYER 1 INPUT
+
+# PLAYER 1 ,INPUT NEED HELP IN HOW TO RE START THE LOOP AFTER THE BREAK AND NOT GO TO THE NEXT PLAYER
 
 def player_1_input():
- 
+    print_board()
     player_input_row = int(input(f"Player number 1 \nEnter the row number from 1 to 3 \n"))
     player_input_column = int(input(f"Player number 1 \nEnter the column number from 1 to 3 \n"))
     for row in range(len(board)):
@@ -55,19 +53,24 @@ def player_1_input():
          item = player_input_column -1
          if board[row][item] == " ":
              board[row][item] = "X"
+             
              return board[row][item]
-         else:
+         elif board[row][item] != " ":
            print("That space is taken, try again :)")
-       break
+           break #HOW DO I RESTART THE LOOP CORRECTLY AND NOT GO OUT OF THE FUNCTION,
+           
+       
+          
+      
            
               
    
              
 
-# PLAYER 2 INPUT
+# PLAYER 2 ,INPUT NEED HELP IN HOW TO RE START THE LOOP AFTER THE BREAK AND NOT GO TO THE NEXT PLAYER
 
 def player_2_input():         
-  
+    print_board()
     player_input_row = int(input(f"Player number 2 \nEnter the row number from 1 to 3 \n"))
     player_input_column = int(input(f"Player number 2 \nEnter the column number from 1 to 3 \n"))
     for row in range(len(board)):
@@ -76,22 +79,33 @@ def player_2_input():
          item = player_input_column -1
          if board[row][item] == " ":
              board[row][item] = "O"
+             
              return board[row][item]
-         else:
+         elif board[row][item] != " ":
            print("That space is taken, try again :)")
-       break
+           break #HOW DO I RESTART THE LOOP CORRECTLY AND NOT GO OUT OF THE FUNCTION, 
+        
+          
+           
+         
+          
+         
+
+          
+      
            
     
              
              
-           
+          #  NOT WORKING TRY LOOPING BUT DID NOT WORK RIGTH
          
-# def draw_conditions():
-#   for i in range(len(board)):
-#     for j in range(len(board[i])):
-#       if " " not in board[i][j]:
-#         print("It's a draw :)")
-#         break
+def draw_conditions():
+  if " " not in board[:]:
+        return print("It's a draw :)")
+
+     
+                
+        # USE LOOP OR NOT
         
 # def winning_conditions():
   # if board[0][0] == board[0][1] ==board[0][2]=="X" or \
@@ -110,25 +124,28 @@ def player_2_input():
   #    board[0][0] == board[1][0] ==board[2][0]=="O" or \
   #    board[0][2] == board[1][2] ==board[2][2]=="O":
   #   print("Player 2 Wins ;)********************")
-  # elif " " not in board:
-  #   print("It's a draw :)")
+  # else:
+      # break
 
-# player_1 = player_1_input()
-# player_2 = player_2_input()
-# number = 1
-# number = 0
 
-while True:
-  print_board()
-  player_1_input()
-  # draw_conditions()
-  # number +=1
-  print_board()
-  player_2_input()
-  # draw_conditions()
+
+
+number = 0
+
+while number <= 9:
   
+  player_1_input()
   # winning_conditions()
-  # number +=1
+  draw_conditions()
+  number +=1
+  
+  player_2_input()
+  # winning_conditions()
+  draw_conditions()
+  number +=1
+  
+ 
+  
 
   
  
