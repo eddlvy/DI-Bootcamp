@@ -1,0 +1,16 @@
+-- create table customer (
+-- id serial primary key,
+-- first_name varchar(50),
+-- last_name varchar(50)
+-- );
+-- insert into customer (first_name,last_name)
+-- values
+-- ('Greg','Jones'),
+-- ('Sandra','Jones'),
+-- ('Scott','Scott'),
+-- ('Trevor','Green'),
+-- ('Melanie','Jonhson');
+-- select last_name from customer where last_name = 'Smith';
+-- select first_name from customer where last_name = 'Jones'and id <= 5;
+-- select first_name,last_name from customer where first_name != 'Scott' and id <= 5;
+-- select * from customer where id <= 5;
