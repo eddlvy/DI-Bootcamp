@@ -1,0 +1,35 @@
+-- EXERCISE 1
+-- create table items (
+-- id serial primary key,
+-- furniture_type varchar(50),
+-- price int
+-- );
+-- insert into items (furniture_type,price)
+-- values
+-- ('small desk',100),
+-- ('large desk',300),
+-- ('fan',80);
+-- select * from items;
+-- select * from items
+-- order by price asc;
+-- select * from items where price > 80
+-- order by price desc;
+
+-- create table customer (
+-- id serial primary key,
+-- first_name varchar(50),
+-- last_name varchar(50)
+-- );
+-- insert into customer (first_name,last_name)
+-- values
+-- ('Greg','Jones'),
+-- ('Sandra','Jones'),
+-- ('Scott','Scott'),
+-- ('Trevor','Green'),
+-- ('Melanie','Jonhson');
+-- select first_name,last_name from customer where id < 4
+-- order by first_name desc;
+-- select last_name from customer
+-- order by first_name asc;
+
+-- EXERCISE 2 GIVING ME ERRORS
